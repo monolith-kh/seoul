@@ -1,6 +1,14 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+#boot-logo {
+    text-align: center;
+}
+
+#boot-logo>img{
+    width: 50%;
+}
+
 #socket-data {
     font-size: 38px;
     color: lightgreen;
