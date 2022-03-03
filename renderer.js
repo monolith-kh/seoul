@@ -14,7 +14,7 @@ let socketData = null;
 
 init();
 
-server.listen(8107, function() {
+server.listen(8888, function() {
     console.log('Server listening: ' + JSON.stringify(server.address()));
     server.on('close', function(){
         console.log('Server Terminated');
