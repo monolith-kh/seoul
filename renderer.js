@@ -12,6 +12,8 @@ let server = null;
 
 let socketData = null;
 
+let clearBtn = null;
+
 init();
 
 server.listen(8888, function() {
@@ -34,6 +36,12 @@ function writeData(socket, data){
         })(socket, data);
     }
 }
+
+clearBtn.addEventListener('click', async () => {
+  alert('clear socket data');
+  socketData.textContent = `data: n/a`;
+})
+
 
 function init() {
     server = net.createServer(function(client) {
@@ -65,8 +73,10 @@ function init() {
       }
     );
 
-    socketData
     socketData = document.getElementById('socket-data');
     socketData.textContent = `data: n/a`;
+
+    clearBtn = document.getElementById('clear');
+    clearBtn.disabled = false;
 
 }
