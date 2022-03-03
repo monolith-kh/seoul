@@ -3,4 +3,6 @@
 /* Add styles here to customize the appearance of your app */
 #socket-data {
     font-size: 38px;
+    color: lightgreen;
+    background-color: green;
 }
